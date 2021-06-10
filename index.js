@@ -103,7 +103,6 @@ const reyna = {
   rating: "3.5",
   feedback:"this place is chill with really cool people, great for getting work done on weekdays"
 }
-
   reviews[7] = (reyna);
   console.log(reviews);
 
@@ -121,10 +120,11 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
-}
+function getReviewByIndex(array,number) {
 
+  return `${array[number].name} gave the restaurant a ${array[number].rating} star review, and their feedback was: ${array[number].feedback}`
+}
+console.log(getReviewByIndex(reviews, 0));
 
   
 
